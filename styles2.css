@@ -1,0 +1,91 @@
+﻿.menu-box2{
+	text-align: center;
+}
+
+.menu-box2__item{
+	width: 315px;
+	margin: 0 0 45px;
+	display: inline-block;
+}
+
+.main-page__service-item{
+	display: block;
+	width: 283px;
+	margin: 0 auto;
+	text-decoration: none!important;
+}
+
+.main-page__service-item:hover{
+	opacity: .8;
+}
+
+.main-page__service-item img,
+.main-page__service-item span{
+	display: block!important;
+}
+
+.main-page__service-item span {
+	color: #5c5c5c;
+	font: 18px/20px "bold";
+}
+
+.main-page__service-item img{
+	margin: 0 0 12px!important;
+	width: 100%;
+	max-width: 100%;
+}
+
+.visual-box .visual li .btn-more:hover{
+	background: #82c74f!important;
+	border-color: #82c74f!important;
+	color: #fff!important;
+}
+
+.clients-box{
+	background: rgba(0, 0, 0, 0) url("images/bg-stat2.jpg") repeat scroll 0 0;
+    margin: 0 -9999px;
+    padding: 50px 9999px 85px;
+    text-align: center;
+    width: 960px;
+}
+
+.clients-box .title {
+    color: #5c5588;
+    display: block;
+    font: 24px/26px "bold";
+    margin: 0 0 20px;
+}
+
+.clients-box__inner{
+	background: #fff;
+	text-align: center;
+	padding: 20px 0 0;
+	margin: 35px 0 0;
+}
+
+.clients-box__inner-item{
+	width: 315px;
+	margin: 0 0 20px;
+	display: inline-block;
+}
+
+.clients-box__inner-item a{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.clients-box__inner-item a:hover{
+	opacity: .8;
+}
+
+.clients-box__inner-item a img{
+	display: block;
+	max-width: 100%;
+}
+
+.btn-exz span{
+	font-size: 14px;
+}
+.news-cols ul li:nth-child(3n+1) {
+    clear: left;
+}

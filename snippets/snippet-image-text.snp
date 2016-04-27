@@ -1,0 +1,9 @@
+<div class="text-image-block right-image">    
+    <div class="text-col">      
+      <p>Текст</p>        
+    </div>
+    <div class="image-col">      
+      <img src="/upload/image/about-2.jpg" alt="">        
+    </div>
+    <div class="clear"></div>
+  </div>

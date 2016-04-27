@@ -1,0 +1,488 @@
+ 
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Офисная логистика. Переезды. Консалтинг</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<link href="http://www.moveconsult.ru/bitrix/js/main/core/css/core.css?13969643978960" type="text/css" rel="stylesheet" />
+<link href="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/components/bitrix/menu/main_top/style.css?14435398050" type="text/css" rel="stylesheet" />
+<link href="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/components/bitrix/menu/footer/style.css?14435398050" type="text/css" rel="stylesheet" />
+<link href="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/styles.css?14435398062527" type="text/css" rel="stylesheet" />
+<link href="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/template_styles.css?146165703750544" type="text/css" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles2.css">
+
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script><script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','USER_ID':'','SERVER_TIME':'1461770874','SERVER_TZ_OFFSET':'10800','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'491bef3298051ce5a58a131c2c18e764','SITE_ID':'s1'});(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/js/main/core/core.js?139696439776124"></script>
+<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/js/main/core/core_ajax.js?139696439728774"></script>
+<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/js/main/session.js?13969643963157"></script>
+
+<script type="text/javascript">
+bxSession.Expand(1440, '491bef3298051ce5a58a131c2c18e764', false, '6c2c5ca99e3f24f2daad15f4a5ddfb42');
+</script>
+
+
+
+
+	<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/plagins/bxslider/bxslider.min.js"></script>
+	<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/js/css_browser_selector.js"></script>
+	<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/js/clear-form-feilds.js"></script>
+	<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/js/flipsnap.min.js"></script>
+	<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/js/jquery.main.js"></script>
+	<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/js/jquery.form.js"></script>
+	<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/js/jClever.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/plagins/bxslider/bxslider.css">
+		<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	</head>
+	<body class="service-page">
+	<div id="panel"></div>
+	
+	<div id="f_icone">
+		<div id="zapros"  class="btn-exz btn-exz1"><a class="block zapros" href="javascript:void(0)"></a><span>Задать вопрос</span></div>
+		<div class="clear"></div>
+		<div id="ex_z" class="btn-exz " style="margin-top:3px;"><div  class="ex_z"></div><span>Экспресс-заявка на обслуживание</span></div>
+	</div>
+	
+	
+	
+<div class="form" id="ajax_zapros"> 
+  <div class="close"></div>
+ <form class="jClever" name="zapros" method="POST" action="/include/ajax_zapros.php"> 		
+    <div class="form-box"> 			<strong class="title">ЗАПРОС</strong> 			 			
+      <div class="checkbox"> 				<input type="radio" id="pod_info" name="radio[]" value="1" /> 				<label for="pod_info">хочу получить подробную информацию по услугам на e-mail</label> 			</div>
+     			
+      <div class="checkbox"> 				<input type="radio" id="vs_con" name="radio[]" value="2" /> 				<label for="vs_con">хочу назначить встречу с консультантом </label> 			</div>
+     			
+      <div class="checkbox"> 				<input type="radio" id="zvon" name="radio[]" value="3" /> 				<label for="zvon">мне необходим звонок специалиста </label> 			</div>
+     			
+      <div class="checkbox"> 				<input type="radio" id="pr" name="radio[]" value="4" /> 				<label for="pr">прочее</label> 			</div>
+     
+      <br />
+     
+      <br />
+     			
+      <div class="wrap"> 				
+        <div class="alignleft"> 					<label for="lab2">Название компании</label> 					<input type="text" id="company" class="text" value="" name="company" /> 				</div>
+       				
+        <div class="alignright"> 					<label for="lab1">Имя и фамилия</label> 					<input type="text" id="name" class="text" value="" name="name" /> 				</div>
+       			</div>
+     			
+      <div class="wrap"> 				
+        <div class="alignleft"> 					<label for="lab2">Телефон</label> 					<input type="text" id="phone" class="text" value="" name="phone" /> 				</div>
+       				
+        <div class="alignright"> 					<label for="lab3">EMail</label> 					<input type="text" id="email" class="text incorrect" value="" name="email" /> 				</div>
+       			</div>
+     			
+      <div class="wrap"> 				<label for="lab4">Комментарий</label> 				<textarea id="textarea" rows="10" cols="30" name="textarea"></textarea> 			</div>
+     			
+      <div class="wrap"> 				 				
+        <div class="alignleft"> 					<label for="lab2">Проверочный код</label> 					<input type="hidden" border="0" src="/bitrix/images/fileman/htmledit2/php.gif" bxid_337621"="" value="&lt;img id=" name="rev-captcha_sid" />&quot; /&gt; 					<img src="/bitrix/tools/captcha.php?captcha_sid=0f998371a14176b768cd4f52d47b5256" alt="CAPTCHA" style="margin-top: 5px; height: 42px; border: 3px solid rgb(255, 255, 255);"  /> 												 				</div>
+       				
+        <div class="alignright"> 					<label for="lab2">Код с картинки</label> 					<input type="text" class="text" size="25" name="rev-captcha_word" id="keystring" /> 				</div>
+       			</div>
+     			<input type="submit" class="btn-send" value="Отправить" /> 			 			
+      <div class="form_text">Личная информация наших клиентов конфиденциальна и не передаётся третьим лицам!</div>
+     		</div>
+   	 </form> </div>
+	
+<div class="form" id="ajax_ex_z"> 
+  <div class="close"></div>
+ <form class="jClever" name="ex_z" method="POST" action="/include/ajax_ex_z.php"> 		
+    <div class="form-box"> 			<strong class="title">ЭКСПРЕСС-ЗАЯВКА</strong> 			 			
+      <div class="ex_z_text">
+        <div>Уважаемые клиент!</div>
+       <span>Пожалуйста, заполните все поля заявки – это ускорит её обработку и исключит ошибки при её исполнении.</span></div>
+     				
+      <br />
+     				
+      <br />
+     				 			
+      <div class="wrap"> 					<label for="lab2">Название компании</label> 					<input type="text" id="company" class="text dl" value="" name="company" /> 			</div>
+     			
+      <div class="wrap"> 				
+        <div class="alignleft"> 					<label for="lab2">Телефон для связи</label> 					<input type="text" id="phone" class="text" value="" name="phone" /> 				</div>
+       				
+        <div class="alignright"> 					<label for="lab1">Имя и фамилия</label> 					<input type="text" id="name" class="text" value="" name="name" /> 				</div>
+       			</div>
+     			
+      <div class="wrap"> 				<label>Место и время проведения встречи или работ</label> 				<input type="text" id="place" class="text dl" value="" name="place" /> 			</div>
+     			
+      <div class="wrap"> 				<label>Объем и вид заказываемых услуг или работ</label> 				<input type="text" id="volume" class="text dl" value="" name="volume" /> 			</div>
+     			
+      <div class="wrap"> 				 				
+        <div class="alignleft"> 					<label for="lab2">Проверочный код</label> 					<input type="hidden" border="0" src="/bitrix/images/fileman/htmledit2/php.gif" bxid_896634"="" value="&lt;img id=" name="captcha_sid" />&quot; /&gt; 					<img src="http://www.moveconsult.ru/bitrix/tools/captcha.php?captcha_sid=036e99b8f62ca02b975d074f9d3977f6" alt="CAPTCHA" style="margin-top: 5px; height: 42px; border: 3px solid rgb(255, 255, 255);"  /> 												 				</div>
+       				
+        <div class="alignright"> 					<label for="lab2">Код с картинки</label> 					<input type="text" class="text" size="25" name="captcha_word" id="keystring" /> 				</div>
+       			</div>
+     			<input type="submit" class="btn-send" value="Отправить" /> 		</div>
+   	 </form> </div>
+		<section class="wrapper 111">
+	<div id="form-bg"></div>
+		
+			<!-- header -->
+			<header>
+				<div class="container h100p relative">
+					<div id="logo-m">
+						<strong class="logo"><a href="/">MOVECONSULTING</a></strong>
+						
+<ul class="nav">
+				<li><a href="/about/">О КОМПАНИИ</a></li>
+					<li><a href="/services/moveconsulting/">УСЛУГИ</a></li>
+					<li><a href="/trust/">КЛИЕНТАМ</a></li>
+					<li><a href="/press/">ПРЕСС-ЦЕНТР</a></li>
+					<li><a href="/contacts/">КОНТАКТЫ</a></li>
+	</ul>
+					</div>
+					<div class="panel lang-box">
+						<ul class="lang">
+							<li>
+								<span class="img-holder ">
+									<img src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/images/ico-1.png" alt="image description" width="18" height="12" />
+								</span>
+								EN
+							</li>
+							<li><img style="margin-top:2px;" src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/images/login-icon.png" alt="login"> <noindex><a target="_blank" rel="nofollow" href="https://worksection.com/login.html">Войти</a></noindex></li>
+						</ul>
+					</div>
+					<div class="phone">+7 (495) 66-99-22-7</div>
+					<div class="panel login">
+						<form action="#" class="sign">
+							<fieldset>
+								<div class="wrap">
+									<span><input type="text" value="ЛОГИН" class="text"></span>
+									<span><span class="input-placeholder-text" style="color: rgb(178, 178, 178); position: absolute;">ПАРОЛЬ</span><input type="password" class="text"></span>
+									<input type="submit" value="Войти" class="btn-sign">
+								</div>
+								<div class="wrap">
+									<a href="#" class="reg">Регистрация</a>
+									<a href="#" class="forgot">Забыли пароль?</a>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					
+				</div>
+			</header>
+			<!-- header end -->
+			<!-- main -->
+						
+				<section class="main" id="ajax-main">
+				 <div class="visual-box">
+	<div class="visual-holder">
+		<!-- <div class="container relative">
+			<a href="#" class="next"></a>
+			<a href="#" class="prev"></a>	
+		</div> -->
+		
+		<ul class="visual">
+			<li style="background: url(images/slide1.jpg) center center no-repeat;">
+			<div id="video">
+			<span class="blue-bg"></span>
+			</div>
+			<div class="box">
+					<strong class="title">При аренде офиса</br>переезд в подарок!</strong>
+			<div class="slider-line"></div>
+			<div class="text">
+			<span>Только до 30 сентября при аренде офиса через компанию Мувконсалтъ ®</br>
+			переезд предоставляется в подарок. Позвоните по телефону <b>+7 (495) 66-99-22-7</b>,</br>
+			чтобы узнать подробности.</span>
+			</div>
+											<div class="btn-more-box">
+							<a href="/press/interrogation/" class="btn-more">Все акции</a>
+						</div>
+										</div>
+			</li>
+			<li style="background: #00009b url(http://www.moveconsult.ru/upload/iblock/837/837a87e80a45233ed840326389545ae5.jpg) center center no-repeat;">
+				<div id="video">
+					<span class="blue-bg"></span>
+				</div>
+				<div class="box">
+					<strong class="title">Наш тёплый склад для вашей мебели!</strong>
+					<div class="slider-line"></div>
+					<div class="text">
+						<span>Закажите переезд и получите скидку 50% </span><span>на 1-ый месяц складского хранения! 
+						<br />
+						Вывоз всего имущества на склад бесплатно в рамках акции до 1 мая.</span>
+					</div>
+					<div class="btn-more-box">
+						<a href="/press/interrogation/" class="btn-more">Примите участие в нашем опросе!</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="switcher">
+			<ul>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+					</ul>
+		</div>
+	</div>
+</div>
+ 
+<div class="w1"> 
+	<div class="slogan pshow" style="position: relative; opacity: 1; left: 0px; top: 0px;">
+		<div class="name-text"><span>Мувконсалтъ</span> &reg; &mdash;</div>&nbsp; <div class="text-box">
+
+<div class="text-col"> 
+	<p>Работает на рынке мувинговых услуг с 2005 года и является ключевым иноватором в данной отрасли на сегодняшних день. За плечами – более 6000 переездов офисов, квартир и загородных коттеджей. Основная специализация – организация офисных переездов от А до Я. Кроме переездов мы предоставляем такие дополнительные услуги, как подбор офиса, закупка и утилизация мебели, сборка и разборка мебели, складское хранение и др.</p>
+	<p>Нам доверяют как крупные компании, так и физические лица. В компании – собственный грузовой автопарк и профессиональные русские мастера широкого профиля.</p>
+</div>
+	
+		</div><span class="clear"></span>
+	</div>
+
+<div class="menu-box2 pshow">
+	<div class="menu-box2__item">
+		<a href="#" class="main-page__service-item">
+			<img src="images/service21.jpg" alt="">
+			<span>Мувконсалтъ</span>
+		</a>
+	</div>
+	<div class="menu-box2__item">
+		<a href="#" class="main-page__service-item">
+			<img src="images/service22.jpg" alt="">
+			<span>Оценка нового офиса</span>
+		</a>
+	</div>
+	<div class="menu-box2__item">
+		<a href="#" class="main-page__service-item">
+			<img src="images/service23.jpg" alt="">
+			<span>Ремонты и планы рассадки</span>
+		</a>
+	</div>
+	<div class="menu-box2__item">
+		<a href="#" class="main-page__service-item">
+			<img src="images/service24.jpg" alt="">
+			<span>IT-услуги</span>
+		</a>
+	</div>
+	<div class="menu-box2__item">
+		<a href="#" class="main-page__service-item">
+			<img src="images/service25.jpg" alt="">
+			<span>Покупка и утилизация мебели</span>
+		</a>
+	</div>
+	<div class="menu-box2__item">
+		<a href="#" class="main-page__service-item">
+			<img src="images/service26.jpg" alt="">
+			<span>Переезды</span>
+		</a>
+	</div>
+	<div class="menu-box2__item">
+		<a href="#" class="main-page__service-item">
+			<img src="images/service27.jpg" alt="">
+			<span>Складское хранение</span>
+		</a>
+	</div>
+	<div class="menu-box2__item">
+		<a href="#" class="main-page__service-item">
+			<img src="images/service28.jpg" alt="">
+			<span>Инвентаризация</span>
+		</a>
+	</div>
+</div>
+
+ <div class="counters">
+	<li class="pleft" data-delay="1000">
+		<strong>11</strong>
+		<span>лет на рынке</span>
+	</li>
+	<li class="pleft" data-delay="800">
+		<strong>7293</strong>
+		<span>консультаций</span>
+	</li>
+	<li class="pleft" data-delay="600">
+		<strong>6104</strong>
+		<span>проектов за плечами</span>
+	</li>
+	<li class="pleft" data-delay="400">
+		<strong>27</strong>
+		<span>рамочных договоров<br />
+</span>
+	</li>
+</div>
+<div class="clients-box">
+	<strong class="title">Клиенты</strong>
+	<div class="clients-box__inner">
+		<div class="clients-box__inner-item"><a href="#"><img src="images/inchcape.jpg" alt=""></a></div>
+		<div class="clients-box__inner-item"><a href="#"><img src="images/leroymerlin.jpg" alt=""></a></div>
+		<div class="clients-box__inner-item"><a href="#"><img src="images/borjomi.jpg" alt=""></a></div>
+		<div class="clients-box__inner-item"><a href="#"><img src="images/jll.jpg" alt=""></a></div>
+		<div class="clients-box__inner-item"><a href="#"><img src="images/sollers.jpg" alt=""></a></div>
+	</div>
+</div>
+<div class="news-box">
+<strong class="title">Новости</strong>
+	<ul class="news">
+	<li class="pright" data-delay="400">
+	<a href="/press/seminars/seminar-muvkonsalt-innovatsionnye-resheniya-voprosov-ofisnykh-pereezdov-/">
+		<em>23.10.2015</em>
+		<span>Семинар: «Мувконсалт – инновационные решения вопросов офисных переездов» </span>
+		<p></p></a></li>
+	<li class="pright" data-delay="800">
+	<a href="/press/news/vnimanie-smena-fakticheskogo-adresa-kompanii/">
+		<em>25.09.2015</em>
+		<span>Внимание! Смена фактического адреса компании!</span>
+		<p></p></a></li>
+	</ul>
+	<a href="/press/" class="btn-all">Все новости</a>
+</div>
+ 
+<div class="form-callme">
+	<h2>Остались вопросы?</h2>
+	<div class="text-form">Позвоните по телефону +7 (495) 66-99-22-7 <br>
+		Или заполните форму ниже, и мы сами перезвоним.</div>
+			
+	<div class="callme-box" id="call_me_form">
+		<input placeholder="Ваше имя" name="call_me_form-name" type="text">
+		<input placeholder="Ваш телефон"  class="phone-mask" name="call_me_form-phone" type="text">
+		<div class="btn-red" id="call_me_form-btn-popup-send">Перезвоните мне</div>		
+	</div>
+	<div style="display:none;" class="form" id="call_me_form_ok">
+		<div class="close" onclick="$('#call_me_form_ok').fadeOut();"></div><div class="success"><h2>Ваша заявка принята</h2> 
+		<div>ОЖИДАЙТЕ ЗВОНКА НАШЕГО СПЕЦИАЛИСТА!</div></div>
+	</div>
+	<script>
+		var pathCallMe = '/include/call-me-ajax.php';
+		$('input[name=call_me_form-name],input[name=call_me_form-phone],textarea[name=call_me_form-text]').click(function()
+		{
+			$(this).removeClass('no-valid');
+			$(this).next().children().hide();
+		});
+		$('#call_me_form-btn-popup-send').click(function() {    	
+			var errorOrder = 0;
+				
+			if($("input[name=call_me_form-phone]").val()==''){
+				errorOrder++;
+				$("input[name=call_me_form-phone]").addClass('no-valid');
+				$("input[name=call_me_form-phone]").next().children().show();
+			}
+			if($("input[name=call_me_form-name]").val()==''){
+				errorOrder++;
+				$("input[name=call_me_form-name]").addClass('no-valid');
+				$("input[name=call_me_form-name]").next().children().show();
+			}					
+			
+			if(errorOrder == 0){ 
+				var NAME = $('input[name=call_me_form-name]').val();						
+				var PHONE = $('input[name=call_me_form-phone]').val();   
+			    $.post(pathCallMe, {			                
+			        PHONE:PHONE,
+			        NAME:NAME,
+			    },
+			      function (data) {                                               
+			        //alert(data);
+			        if(data=="Y"){
+			        	$('input[name=call_me_form-name]').val('');								
+				 		$('input[name=call_me_form-phone]').val('');
+				 		$('#call_me_form_ok').fadeIn();
+				 		$('#call_me_form-btn-popup-send').text('Отправлено');						
+			        }
+			        
+
+			      }
+			    );      
+		  	}
+		});
+		</script>	  		
+ </div>
+	
+											
+				</div>	
+							
+			</section>
+			<!-- main end --> 		
+	</section>
+	<!-- footer -->
+	<footer>
+		<div class="holder">
+			<span class="copy">© Moveconsult, 2005-2016<br/>
+Все права защищены <br/> Мувконсалтъ® / Moveconsultъ®</span>
+			<span class="dev">
+				<div class="phone-footer"><img src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/images/icon-phone.png" alt=""> +7 (495) 66-99-22-7</div>
+				<div class="mail"><img src="http://www.moveconsult.ru/bitrix/templates/moveconsulting_grotesk/images/icon-email.png" alt=""> info@moveconsult.ru</div>
+			</span>
+			<div class="row">
+				<div class="menu-bottom">
+					
+<ul class="nav-footer">
+				<li class="active"><a href="/">Главная</a></li>
+					<li><a href="/services/moveconsulting/">Услуги</a></li>
+					<li><a href="/press/news/">Новости</a></li>
+					<li><a href="/about/">О компании</a></li>
+					<li><a href="/trust/">Партнерство</a></li>
+					<li><a href="/contacts/">Контакты</a></li>
+	</ul>
+				</div>
+			</div>
+		</div>
+		<div class="holder holder-2">
+			<span class="float-l">
+				<a href="javascript:void(0)" onclick="$('#ajax_polit').fadeIn();">Политика конфиденциальности</a>
+			</span>
+			<span class="float-r">
+				Сделано с любовью в веб-студии <a target="_blank" href="http://visario.ru/?utm_source=moveconsult&utm_medium=copyright&utm_campaign=moveconsult ">Визарио</a>
+			</span>
+		</div>
+	</footer>
+	<div id="ajax_polit" class="form" style="display:none;">
+		<div class="form-box" onclick="$('#ajax_polit').fadeOut();">
+			<div class="close"></div>
+			<strong class="title">Политика конфиденциальности</strong>
+			<div class="ex_z_text">
+				<div>Настоящая политика конфиденциальности распространяется на всех посетителей и пользователей сайта. Пользователю сайта необходимо внимательно ознакомиться с настоящими Условиями.</div>
+				<div>Пользователь дает ООО "Мувконсалт" разрешение на обработку своих персональных данных, указываемых им в анкете, на сайтах компании.</div>
+				<div>ООО "Мувконсалт" использует всю добровольно предоставленную пользователем информацию для обработки и предоставления информационных образовательных услуг.</div>
+				<div>Никакая информация личного характера об отдельном пользователе не разглашается, кроме случаев, предусмотренных законом.</div>
+				<div>Мувконсалт - зарегистрированный товарный знак. Все исключительные права принадлежат ООО "Мувконсалт". Любое частичное или полное копирование текстов с сайта преследуется по закону</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer end -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter27042245 = new Ya.Metrika({id:27042245,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/27042245" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72503677-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
